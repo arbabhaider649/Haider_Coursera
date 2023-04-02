@@ -9,32 +9,75 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief function APIs for calculating maximum, minimum, mean, and median of the data set. 
+ * Also reorder this data set from large to small.
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Arbab Haider
+ * @date 02/04/2023
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @brief A function that prints the statistics of an array including minimum, maximum, 
+ * mean, and median.
+ * @param array given to the function and length
+ * @return None
  */
+void print_statistics(unsigned char data[], int N);
+
+
+/**
+ * @brief  Given an array of data and a length, prints the array to the screen.
+ * @param array given to the function and length
+ * @return None
+ */
+void print_array(unsigned char data[], int N);
+
+
+/**
+ * @brief Given an array of data and a length, returns the median value
+ * @param array given to the function and length
+ * @return middle element from the given array
+ */
+unsigned char find_median(unsigned char data[], int N);
+
+
+/**
+ * @brief Given an array of data and a length, returns the mean
+ * @param array given to the function and length
+ * @return average of the given array
+ */
+unsigned char find_mean(unsigned char data[], int N); 
+
+
+/**
+ * @brief Given an array of data and a length, returns the maximum
+ * @param array given to the function and length
+ * @return largest element from the given array
+ */
+unsigned char find_maximum(unsigned char data[], int N);
+
+
+/**
+ * @brief Given an array of data and a length, returns the minimum
+ * @param array given to the function and length
+ * @return smallest element from the given array
+ */
+unsigned char find_minimum(unsigned char data[], int N);
+
+
+/**
+ * @brief Given an array of data and a length, sorts the array from largest to smallest. 
+ * @param array given to the function and length
+ * @return array in reverse order
+ */
+void sort_array(unsigned char data[], int N);
 
 
 #endif /* __STATS_H__ */
